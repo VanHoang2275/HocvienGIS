@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -11,7 +11,7 @@ import CourseDetail from "./pages/CourseDetail";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/HocvienGIS">
+    <HashRouter>
       <div className="min-h-screen bg-[#0F172A] text-white flex flex-col">
         <Navbar />
 
@@ -27,6 +27,6 @@ export default function App() {
 
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
