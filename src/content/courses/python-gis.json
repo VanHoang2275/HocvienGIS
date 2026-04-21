@@ -1,0 +1,31 @@
+{
+  "title": "Python cho GIS",
+  "slug": "python-cho-gis",
+  "level": "Trung cấp",
+  "duration": "8 buổi",
+  "price": "699.000đ",
+  "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
+  "shortDescription": "Tự động hóa xử lý dữ liệu không gian bằng Python.",
+  "description": "Khóa học giúp bạn dùng Python để xử lý shapefile, raster, bảng thuộc tính và tự động hóa workflow GIS.",
+  "objectives": [
+    "Làm quen với Python cho GIS",
+    "Đọc và ghi dữ liệu không gian",
+    "Tự động hóa xử lý dữ liệu",
+    "Kết hợp Python với QGIS"
+  ],
+  "contents": [
+    "Python cơ bản cho GIS",
+    "Làm việc với geopandas",
+    "Xử lý dữ liệu vector",
+    "Đọc và ghi raster",
+    "Tự động hóa quy trình"
+  ],
+  "audience": [
+    "Người đã biết GIS cơ bản",
+    "Người muốn học automation",
+    "Sinh viên và kỹ sư dữ liệu không gian"
+  ],
+  "instructor": "HocvienGIS",
+  "ctaText": "Tư vấn ngay",
+  "ctaLink": "https://facebook.com/"
+}
