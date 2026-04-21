@@ -1,0 +1,31 @@
+{
+  "title": "QGIS Cơ Bản",
+  "slug": "qgis-co-ban",
+  "level": "Cơ bản",
+  "duration": "10 buổi",
+  "price": "499.000đ",
+  "thumbnail": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80",
+  "shortDescription": "Khóa học dành cho người mới bắt đầu làm quen với QGIS và bản đồ số.",
+  "description": "QGIS Cơ Bản là khóa học nhập môn giúp bạn làm quen với giao diện phần mềm, dữ liệu không gian và các thao tác biên tập, trình bày bản đồ. Phù hợp cho sinh viên, người mới đi làm và người cần nền tảng GIS thực hành.",
+  "objectives": [
+    "Hiểu cấu trúc dữ liệu vector và raster",
+    "Biết nạp và quản lý dữ liệu trong QGIS",
+    "Thực hiện ký hiệu hóa và trình bày bản đồ",
+    "Xuất bản đồ phục vụ báo cáo và học tập"
+  ],
+  "contents": [
+    "Giới thiệu giao diện QGIS",
+    "Làm việc với shapefile và GeoJSON",
+    "Ký hiệu hóa dữ liệu bản đồ",
+    "Label và bố cục bản đồ",
+    "Xuất bản đồ sang PDF và ảnh"
+  ],
+  "audience": [
+    "Sinh viên GIS, TNMT, địa lý",
+    "Người mới bắt đầu học GIS",
+    "Cán bộ kỹ thuật cần làm bản đồ cơ bản"
+  ],
+  "instructor": "HocvienGIS",
+  "ctaText": "Đăng ký học ngay",
+  "ctaLink": "https://facebook.com/"
+}
