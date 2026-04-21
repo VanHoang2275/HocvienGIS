@@ -59,7 +59,9 @@ export default function Catalog() {
           </div>
         ) : (
           <div className="text-center py-20 border border-dashed border-white/10 rounded-2xl">
-            <h3 className="text-2xl font-semibold mb-3">Chưa có khóa học nào</h3>
+            <h3 className="text-2xl font-semibold mb-3">
+              Chưa có khóa học nào
+            </h3>
             <p className="text-gray-400">
               Hãy thêm file vào thư mục{" "}
               <span className="text-orange-400">src/content/courses</span>
