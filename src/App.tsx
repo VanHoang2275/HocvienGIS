@@ -1,28 +1,33 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import Home from './pages/Home';
-import Catalog from './pages/Catalog';
-import CourseDetail from './pages/CourseDetail';
-import Blog from './pages/Blog';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Courses from "./pages/Courses";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen bg-[#0F172A]">
+    <BrowserRouter basename="/HocvienGIS">
+      <div className="min-h-screen bg-[#0F172A] text-white flex flex-col">
         <Navbar />
-        <main className="flex-grow">
+
+        <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/catalog" element={<Catalog />} />
-            <Route path="/course/:slug" element={<CourseDetail />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/courses" element={<Courses />} />
             <Route path="/blog" element={<Blog />} />
-            {/* Fallback for other links mentioned in navbar */}
-            <Route path="*" element={<Home />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
