@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { posts } from "../data/posts";
+import { posts } from "../lib/blog";
 
 export default function Blog() {
   return (
     <div className="min-h-screen bg-[#0F172A] text-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-14">
           <h1 className="text-5xl font-bold">Blog & Kiến thức</h1>
           <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
@@ -14,16 +13,14 @@ export default function Blog() {
           </p>
         </div>
 
-        {/* Grid Posts */}
         {posts.length > 0 ? (
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <Link
-                key={post.id}
+                key={post.slug}
                 to={`/blog/${post.slug}`}
                 className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition duration-300 hover:-translate-y-1"
               >
-                {/* Image */}
                 <div className="overflow-hidden">
                   <img
                     src={post.image}
@@ -32,7 +29,6 @@ export default function Blog() {
                   />
                 </div>
 
-                {/* Content */}
                 <div className="p-5">
                   <div className="mb-2 flex items-center justify-between text-sm">
                     <span className="text-orange-400 font-medium">
@@ -62,8 +58,8 @@ export default function Blog() {
               Chưa có bài viết nào
             </h3>
             <p className="text-gray-400">
-              Hãy thêm dữ liệu vào file{" "}
-              <span className="text-orange-400">src/data/posts.ts</span>
+              Hãy thêm file vào thư mục{" "}
+              <span className="text-orange-400">src/content/blog</span>
             </p>
           </div>
         )}
