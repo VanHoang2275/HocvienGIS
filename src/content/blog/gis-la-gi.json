@@ -1,0 +1,9 @@
+{
+  "title": "GIS là gì? Tổng quan cho người mới bắt đầu",
+  "slug": "gis-la-gi",
+  "date": "21/04/2026",
+  "category": "GIS",
+  "image": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80",
+  "excerpt": "Giới thiệu khái niệm GIS, ứng dụng trong quy hoạch, tài nguyên và môi trường.",
+  "content": "GIS là hệ thống thông tin địa lý dùng để thu thập, lưu trữ, phân tích và hiển thị dữ liệu không gian.\n\nGIS được ứng dụng rất rộng trong quy hoạch đô thị, quản lý đất đai, tài nguyên môi trường, giao thông và nông nghiệp thông minh.\n\nĐối với người mới bắt đầu, việc hiểu dữ liệu vector, raster và cách biểu diễn bản đồ là nền tảng quan trọng."
+}
