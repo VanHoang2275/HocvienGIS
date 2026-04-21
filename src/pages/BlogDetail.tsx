@@ -1,46 +1,39 @@
-import { useParams, Link } from "react-router-dom";
-import { posts } from "../data/posts";
+import { Link, useParams } from "react-router-dom";
+import { getPostBySlug } from "../lib/blog";
 
 export default function BlogDetail() {
   const { slug } = useParams();
-
-  const post = posts.find((p) => p.slug === slug);
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return (
-      <div className="text-white p-20">
-        Không tìm thấy bài viết
+      <div className="min-h-screen bg-[#0F172A] text-white px-6 py-24">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-3xl font-bold mb-4">Không tìm thấy bài viết</h1>
+          <Link to="/blog" className="text-orange-400 hover:underline">
+            ← Quay lại Blog
+          </Link>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-[#0F172A] text-white min-h-screen py-24 px-6">
+    <div className="min-h-screen bg-[#0F172A] text-white px-6 py-24">
       <div className="max-w-4xl mx-auto">
-
-        <Link
-          to="/blog"
-          className="text-orange-400"
-        >
+        <Link to="/blog" className="text-orange-400 hover:underline">
           ← Quay lại Blog
         </Link>
 
         <img
           src={post.image}
-          className="rounded-2xl my-8 w-full h-80 object-cover"
+          alt={post.title}
+          className="w-full h-80 object-cover rounded-2xl mt-6 mb-8"
         />
 
-        <div className="text-sm text-orange-400 mb-3">
-          {post.category}
-        </div>
-
-        <h1 className="text-5xl font-bold mb-4">
-          {post.title}
-        </h1>
-
-        <div className="text-gray-400 mb-8">
-          {post.date}
-        </div>
+        <div className="text-sm text-orange-400 mb-3">{post.category}</div>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
+        <div className="text-gray-400 mb-8">{post.date}</div>
 
         <div className="whitespace-pre-line text-lg leading-8 text-gray-200">
           {post.content}
